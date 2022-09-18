@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/images/tri.ico" type="image/x-icon">
+    <title>Love Triangles</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div>
+            <h1>World of Triangles</h1>
+        </div>
+        <div>
+            <ul id="navigate">
+                <li class="tabs">Angles</li>
+                <li class="tabs">Trivia</li>
+                <li class="tabs">Hypotenuse</li>
+                <li class="tabs">Area</li>
+            </ol>
+            
+        </div>
+      </nav>
+    <div class="content">
+      <div id="choices">
+        <ul>
+            <li class="choice">Angles</li>
+            <li class="choice">Trivia</li>
+            <li class="choice">Hypotenuse</li>
+            <li class="choice">Area</li>
+        </ul>
+      </div>
+      <div id="angles" class="display">
+        <div>
+            <h1>Is Triangle?</h1>
+            <label for="angle-one">First Angle:</label>
+            <input type="number" class="angle" id="angle-one">
+            <label for="angle-two"> Second Angle:</label>
+            <input type="number" class="angle" id="angle-two">
+            <label for="angle-three">Third Angle</label>
+            <input type="number" class="angle" id="angle-three">
+            <span id="angle-btn" class="button">Check</span>
+            <h2 id="triangle-or-not"></h2>
+        </div>
+      </div>
+      <div id="trivia" class="display">
+        <h1>Trivia</h1>
+        <h2><strong>Note:</strong> Mark 1 will be awarded on every correct answer.</h2>
+        <hr>
+        <form action="" id="triangleTrivia">
+            <ol>
+                <li>
+                    <p>1. What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <div class="selections">
+                    <label><input type="radio" name="Q1" value="45">45</label>   
+                    <label><input type="radio" name="Q1" value="90">90</label>
+                    <label><input type="radio" name="Q1" value="60">60</label>
+                    <label><input type="radio" name="Q1" value="10">10</label>
+                   
+                </div>
+                </li>
+                <li>
+                    <p>2. If a triangle has an angle of 90 degrees, what is it called?</p>
+                <div class="selections">
+                    <label><input type="radio" name="Q2" value="obtuse">Obtuse</label>
+                    <label><input type="radio" name="Q2" value="acute">Acute</label>
+                    <label><input type="radio" name="Q2" value="right angled">Right angled</label>
+                    <label><input type="radio" name="Q2" value="equilateral">Equilateral</label>
+                </div>
+                </li>
+                <li>
+                    <p>3. Which of the following triangles have the same side lengths?</p>
+                <div class="selections">
+                    <label><input type="radio" name="Q3" value="Scalene">Scalene</label>
+                    <label><input type="radio" name="Q3" value="Isosceles">Isosceles</label>
+                    <label><input type="radio" name="Q3" value="Equilateral">Equilateral</label>
+                    <label><input type="radio" name="Q3" value="None">None</label>
+                </div>
+                </li>
+                <li>
+                    <p>4. Area of an equilateral triangle with side length a is equal to?</p>
+                <div class="selections">
+                    <label><input type="radio" name="Q4" value="√3/2a">√3/2a</label>
+                    <label><input type="radio" name="Q4" value="√3/2a2">√3/2a <sup>2</sup> </label>
+                    <label><input type="radio" name="Q4" value="√3/4a2">√3/4a<sup>2</sup> </label></label>
+                    <label><input type="radio" name="Q4" value="√3/4 a">√3/4 a</label>
+                </div>
+                </li>
+                <li>
+                    <p>5.  D and E are the midpoints of side AB and AC of a triangle ABC, respectively and BC = 6 cm. If DE || BC, then the length (in cm) of DE is:</p>
+                <div class="selections">
+                    <label><input type="radio" name="Q5" value="2.5">2.5</label>
+                    <label><input type="radio" name="Q5" value="3">3</label>
+                    <label><input type="radio" name="Q5" value="5">5</label>
+                    <label><input type="radio" name="Q5" value="6">6</label>
+                </div>
+                </li>
+                <li>
+                    <p>6. The diagonals of a rhombus are 16 cm and 12 cm, in length. The side of rhombus in length is:</p>
+                <div class="selections">
+                    <label><input type="radio" name="Q6" value="20">20cm</label>
+                    <label><input type="radio" name="Q6" value="8">8cm</label>
+                    <label><input type="radio" name="Q6" value="10">10cm</label>
+                    <label><input type="radio" name="Q6" value="9">9cm</label>
+                </div>
+                </li>
+                <li>
+                    <p>7. Corresponding sides of two similar triangles are in the ratio of 2:3. If the area of small triangle is 48 sq.cm, then the area of large triangle is:</p>
+                <div class="selections">
+                    <label><input type="radio" name="Q7" value="230">230 sq.cm</label>
+                    <label><input type="radio" name="Q7" value="106">106 sq.cm</label>
+                    <label><input type="radio" name="Q7" value="107">107 sq.cm</label>
+                    <label><input type="radio" name="Q7" value="108">108 sq.cm</label>
+                </div>
+                </li>
+                <li>
+                    <p>8. If perimeter of a triangle is 100 cm and the length of two sides are 30 cm and 40 cm, the length of third side will be:</p>
+                <div class="selections">
+                    <label><input type="radio" name="Q8" value="30">30 cm</label>
+                    <label><input type="radio" name="Q8" value="40">40 cm</label>
+                    <label><input type="radio" name="Q8" value="50">50 cm</label>
+                    <label><input type="radio" name="Q8" value="60">60 cm</label>
+                </div>
+                </li>
+                <li>
+                    <p>9. If triangles ABC and DEF are similar and AB=4 cm, DE=6 cm, EF=9 cm and FD=12 cm, the perimeter of triangle is:</p>
+                <div class="selections">
+                    <label><input type="radio" name="Q9" value="22">22 cm</label>
+                    <label><input type="radio" name="Q9" value="20">20 cm</label>
+                    <label><input type="radio" name="Q9" value="21">21 cm</label>
+                    <label><input type="radio" name="Q9" value="18">18 cm</label>
+                </div>
+                </li>
+                <li>
+                    <p>10. The height of an equilateral triangle of side 5 cm is:</p>
+                <div class="selections">
+                    <label><input type="radio" name="Q10" value="4.33">4.33cm</label>
+                    <label><input type="radio" name="Q10" value="3.9cm">3.9cm</label>
+                    <label><input type="radio" name="Q10" value="5">5cm</label>
+                    <label><input type="radio" name="Q10" value="4">4cm</label>
+                </div>
+                </li>
+               
+            </ol>
+        <div class="submitOptions">
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+        </div>
+        </form>
+        <h2 id="triviaAnswer"></h2>
+      </div>
+      <div id="triangleHypo" class="display">
+       <div>
+        <h1>Calculate Hypotenuse</h1>
+
+        <label for="height">Enter height (h)</label>
+        <input type="number" name="height" id="height" placeholder="Enter height" class="hypoSide">
+        <label for="base">Enter base (b)</label>
+        <input type="number" name="base" id="base" placeholder="Enter base" class="hypoSide">
+        
+        <span id="hypo-btn" class="button">Check</span>
+        <h3>HypotenuseFormula</h3>
+        <p>√(base² + height²)</p>
+        <h2>
+            Hypotenuse: <span id="hypoAnswer"></span>
+        </h2>
+       </div>
+      </div>
+      <div id="triangleArea" class="display">
+        <div>
+            <h1>Calculate Hypotenuse</h1>
+        <label for="heightSide">Enter height (h)</label>
+        <input type="number" name="heightSide" id="heightSide" placeholder="Enter height" class="areaSide">
+        <label for="baseSide">Enter base (b)</label>
+        <input type="number" name="baseSide" id="baseSide" placeholder="Enter base" class="areaSide">
+        
+        <span id="area-btn" class="button">Area</span>
+        <h3>Area Formula</h3>
+        <p>Area=1/2*(base*height)</p>
+        <h2>
+            Area: <span id="areaAnswer"></span>
+        </h2>
+        </div>
+      </div>
+      <span id="back-btn" class="button">Back</span>
+    </div>
+</div>
+    <script src="script.js"></script>
+  </body>
+</html>

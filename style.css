@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,600&display=swap');
+:root{
+    --text:white;
+    --linear-one:#0D324D;
+    --linear-two:#7F5A83;
+    --background-color:#002147;
+    --gradient-deg:270deg;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    min-height: 100vh;
+    width:100vw;
+    background-color: var(--background-color);
+    color: var(--text);
+}
+nav
+{
+    padding: 0.5rem;
+    height: fit-content;
+}
+#navigate,.submitOptions{
+    display: flex;
+    justify-content: flex-end;
+}
+#navigate>li,#choices li{
+    display: inline-block;
+    list-style: none;
+    margin:0.5rem;
+    background: linear-gradient(var(--gradient-deg),var(--linear-one),var(--linear-two));
+    padding:0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: var(--text);
+    border:2px solid transparent;
+    text-align: center;
+}
+#navigate>li:hover,#choices li:hover{
+    border:2px solid var(--text);
+    transition: all 0.2s;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+#choices{
+    width:40%;
+    background: linear-gradient(var(--gradient-deg),var(--linear-one),var(--linear-two));
+    padding:0.4rem;
+    border-radius: 1rem;
+    margin-top:8rem;
+}
+#choices>ul{
+    background-color: var(--background-color);
+    padding:1rem;
+    border-radius: 1rem;
+}
+#choices li{
+    display: block;
+    text-align: center;
+}
+/* Angles */
+input[type="number"],#angles label,#angle-btn,#hypo-btn,#area-btn{
+    display: block;
+    width:95%;
+    margin:0.5rem;
+}
+#angle-btn,#hypo-btn,#area-btn{
+    margin:0.5rem;
+    background: linear-gradient(var(--gradient-deg),var(--linear-one),var(--linear-two));
+    padding:0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: var(--text);
+    border:2px solid transparent;
+    text-align: center;
+}
+#angle-btn:hover,#hypo-btn:hover,#area-btn:hover{
+    border:2px solid var(--text);
+    transition: all 0.2s;
+}
+input[type="number"]{
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--text);
+    padding:0.5rem;
+    margin: 1rem 0;
+}
+#angles{
+    width:40%;
+    padding:0.4rem;
+    border-radius: 1rem;
+    background: linear-gradient(var(--gradient-deg),var(--linear-one),var(--linear-two));
+    display: none;
+}
+#angles>div{
+    background-color: var(--background-color);
+    padding:1rem;
+    border-radius: 1rem;
+}
+#triangle-or-not{
+    width:100%;
+    height:3rem;
+    padding:0.5rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+/* Back Button */
+#back-btn{
+    margin:0.5rem;
+    background: linear-gradient(var(--gradient-deg),var(--linear-one),var(--linear-two));
+    padding:0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: var(--text);
+    border:2px solid transparent;
+    text-align: center;
+}
+#back-btn:hover{
+    border:2px solid var(--text);
+    transition: all 0.2s;
+}
+/* Triangle Trivia */
+#trivia{
+    display: none;
+}
+label>input{
+    margin:0 0.5rem;
+}
+.selections{
+padding:1rem;
+}
+#triangleTrivia li label{
+
+display: block;
+padding: 0.5rem;
+cursor: pointer;
+}
+input[type="submit"],input[type="reset"]{
+    padding:0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+}
+input[type="submit"]:hover{
+    background-color: greenyellow;
+}
+input[type="reset"]:hover{
+    background-color: rgba(211, 11, 11, 0.822);
+}
+#triviaAnswer{
+    text-align: center;
+    height:3rem;
+}
+/* Triangle Hypotenuse */
+#triangleHypo,#triangleArea{
+    width:40%;
+    padding:0.4rem;
+    border-radius: 1rem;
+    background: linear-gradient(var(--gradient-deg),var(--linear-one),var(--linear-two));
+    display: none;
+}
+#triangleHypo h3,#triangleHypo p,#triangleArea h3,#triangleArea p{
+    text-align: center;
+    margin: 0.5rem;
+}
+#triangleHypo>div,#triangleArea>div{
+    background-color: var(--background-color);
+    padding:1rem;
+    border-radius: 1rem;
+}
+#hypoAnswer{
+    height:3rem;
+}
+/* Triangle Area */
+#triangleArea{
+    display: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+input{
+    cursor:pointer;
+}
